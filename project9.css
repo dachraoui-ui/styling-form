@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+*{
+box-sizing: border-box;
+}
+body{
+   background: url('image_3.jpeg') no-repeat center center/cover;;
+   font-family: 'Muli', sans-serif;
+   color: #3F72AF;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height:100vh;
+   margin: 0;
+}
+#login_container{
+  background-color: #DBE2EF;
+  padding: 20px 30px 100px 30px;
+  border-radius: 10px;
+  opacity: 85%;
+  
+}
+#login_container h1{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.question a {
+  color: #112D4E;
+  text-decoration: none;
+}
+.info{
+  position: relative;
+  margin: 20px 0px 40px;
+  width: 300px;
+}
+.question{
+  position: absolute;
+  top:70%;
+}
+.info input{
+  border: 0;
+  border-bottom: 2px solid #3F72AF;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  padding: 15px 0px;
+}
+.info input:focus,.info input:valid{
+  outline: none;
+  border-bottom: #47576a 2px solid;
+  /*when the input is valid or in focus state, the label will move up*/
+} 
+#btn{
+  width: 100%;
+  border-radius: 5px;
+  color: #DBE2EF;
+  font-size: 15px;
+  padding: 12px ;
+  display: inline-block;
+  border:0;
+  background-color: #3F72AF;
+  cursor:pointer;
+}
+#btn:active{
+  transform: scale(0.98);
+}
+.info label{
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.info label span {
+  display: inline-block;
+  font-size: 15px;
+  min-width: 5px;
+  transition: 0.4s cubic-bezier(0.7, -0.55, 0.265, 1.55);
+}
+.info input:focus ~ label span
+,.info input:valid ~ label span{
+  transform: translateY(-30px);
+  color: #47576a;
+}
+
+ 
